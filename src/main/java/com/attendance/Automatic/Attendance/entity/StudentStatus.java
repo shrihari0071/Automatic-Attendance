@@ -13,7 +13,7 @@ public class StudentStatus {
 
     private Date date;
 
-    private String attendanceStatus;
+    private int attendanceStatus;
 
     private int attendancePercentage;
 
@@ -33,12 +33,12 @@ public class StudentStatus {
         this.date = date;
     }
 
-    public String getAttendanceStatus() {
+    public int getAttendanceStatus() {
         return attendanceStatus;
     }
 
     public void setAttendanceStatus(String attendanceStatus) {
-        this.attendanceStatus = attendanceStatus;
+        this.attendanceStatus = Integer.parseInt(attendanceStatus);
     }
 
     public int getAttendancePercentage() {
